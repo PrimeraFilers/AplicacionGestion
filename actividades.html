@@ -11,15 +11,93 @@
         
     </body>
     <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Actividades diarias</title>
-        </head>
+    <html lang="en" >
+    <head>
+      <meta charset="UTF-8">
+      <title>Actividades diarias</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
     
-        <body>
-            
-        </body>
+    </head>
+    <body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <button class="btn btn-default pull-right add-row"><i class="fa fa-plus"></i>&nbsp;&nbsp; Añadir entrada</button>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered" id="editableTable">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Tipo de prácticas</th>
+                <th>Total de horas realizadas</th>
+                <th>Actividad realizada</th>
+                <th>Observaciones o incidencias</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-id="1">
+                <td data-field="fecha">15 de noviembre</td>
+                <td data-field="tipo">Dual</td>
+                <td data-field="total">6</td>
+                <td data-field="actividad">Formación PHP</td>
+                <td data-field="observaciones">Estoy realizando un curso de formación de PHP</td>
+                <td>
+                  <a class="button button-small edit" title="Edit">
+                    <i class="fa fa-pencil"></i>
+                  </a>
+                  
+                  <a class="button button-small edit" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr data-id="2">
+                <td data-field="fecha">16 de marzo</td>
+                <td data-field="tipo">FCT</td>
+                <td data-field="total">8</td>
+                <td data-field="actividad">Proyecto Web</td>
+                <td data-field="observaciones">Estoy ayudando al equipo con el proyecto de la web sobre gestión de trenes</td>
+                <td>
+                  <a class="button button-small edit" title="Edit">
+                    <i class="fa fa-pencil"></i>
+                  </a> <a class="button button-small edit" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr data-id="3">
+                <td data-field="fecha">23 de diciembre</td>
+                <td data-field="tipo">Dual</td>
+                <td data-field="total">6</td>
+                <td data-field="actividad">Ayuda con el vídeo navideño de la empresa</td>
+                <td data-field="observaciones">Estoy ayudando con el vídeo de promoción navideño de la empresa</td>
+                <td>
+                  <a class="button button-small edit" title="Edit">
+                    <i class="fa fa-pencil"></i>
+                  </a> <a class="button button-small" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'></script><script  src="./js/actividades.js"></script>
+    
+    </body>
     </html>
+    
