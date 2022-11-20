@@ -1,236 +1,65 @@
-(function($, window, document, undefined) {
-  var pluginName = "editable",
-    defaults = {
-      keyboard: true,
-      dblclick: true,
-      button: true,
-      buttonSelector: ".edit",
-      maintainWidth: true,
-      dropdowns: {},
-      edit: function() {},
-      save: function() {},
-      cancel: function() {}
-    };
-
-  function editable(element, options) {
-    this.element = element;
-    this.options = $.extend({}, defaults, options);
-
-    this._defaults = defaults;
-    this._name = pluginName;
-
-    this.init();
-  }
-
-  editable.prototype = {
-    init: function() {
-      this.editing = false;
-
-      if (this.options.dblclick) {
-        $(this.element)
-          .css('cursor', 'pointer')
-          .bind('dblclick', this.toggle.bind(this));
-      }
-
-      if (this.options.button) {
-        $(this.options.buttonSelector, this.element)
-          .bind('click', this.toggle.bind(this));
-      }
-    },
-
-    toggle: function(e) {
-      e.preventDefault();
-
-      this.editing = !this.editing;
-
-      if (this.editing) {
-        this.edit();
-      } else {
-        this.save();
-      }
-    },
-
-    edit: function() {
-      var instance = this,
-        values = {};
-
-      $('td[data-field]', this.element).each(function() {
-        var input,
-          field = $(this).data('field'),
-          value = $(this).text(),
-          width = $(this).width();
-
-        values[field] = value;
-
-        $(this).empty();
-
-        if (instance.options.maintainWidth) {
-          $(this).width(width);
-        }
-
-        if (field in instance.options.dropdowns) {
-          input = $('<select></select>');
-
-          for (var i = 0; i < instance.options.dropdowns[field].length; i++) {
-            $('<option></option>')
-              .text(instance.options.dropdowns[field][i])
-              .appendTo(input);
-          };
-
-          input.val(value)
-            .data('old-value', value)
-            .dblclick(instance._captureEvent);
-        } else {
-          input = $('<input type="text" />')
-            .val(value)
-            .data('old-value', value)
-            .dblclick(instance._captureEvent);
-        }
-
-        input.appendTo(this);
-
-        if (instance.options.keyboard) {
-          input.keydown(instance._captureKey.bind(instance));
-        }
-      });
-
-      this.options.edit.bind(this.element)(values);
-    },
-
-    save: function() {
-      var instance = this,
-        values = {};
-
-      $('td[data-field]', this.element).each(function() {
-        var value = $(':input', this).val();
-
-        values[$(this).data('field')] = value;
-
-        $(this).empty()
-          .text(value);
-      });
-
-      this.options.save.bind(this.element)(values);
-    },
-
-    cancel: function() {
-      var instance = this,
-        values = {};
-
-      $('td[data-field]', this.element).each(function() {
-        var value = $(':input', this).data('old-value');
-
-        values[$(this).data('field')] = value;
-
-        $(this).empty()
-          .text(value);
-      });
-
-      this.options.cancel.bind(this.element)(values);
-    },
-
-    _captureEvent: function(e) {
-      e.stopPropagation();
-    },
-
-    _captureKey: function(e) {
-      if (e.which === 13) {
-        this.editing = false;
-        this.save();
-      } else if (e.which === 27) {
-        this.editing = false;
-        this.cancel();
-      }
-    }
-  };
-
-  $.fn[pluginName] = function(options) {
-    return this.each(function() {
-      if (!$.data(this, "plugin_" + pluginName)) {
-        $.data(this, "plugin_" + pluginName,
-          new editable(this, options));
-      }
-    });
-  };
-
-})(jQuery, window, document);
-
-editTable();
-
-//custome editable starts
-function editTable(){
-  
-  $(function() {
-  var pickers = {};
-
-  $('table tr').editable({
-    dropdowns: {
-      sex: ['Male', 'Female']
-    },
-    edit: function(values) {
-      $(".edit i", this)
-        .removeClass('fa-pencil')
-        .addClass('fa-save')
-        .attr('title', 'Save');
-
-      pickers[this] = new Pikaday({
-        field: $("td[data-field=birthday] input", this)[0],
-        format: 'MMM D, YYYY'
-      });
-    },
-    save: function(values) {
-      $(".edit i", this)
-        .removeClass('fa-save')
-        .addClass('fa-pencil')
-        .attr('title', 'Edit');
-
-      if (this in pickers) {
-        pickers[this].destroy();
-        delete pickers[this];
-      }
-    },
-    cancel: function(values) {
-      $(".edit i", this)
-        .removeClass('fa-save')
-        .addClass('fa-pencil')
-        .attr('title', 'Edit');
-
-      if (this in pickers) {
-        pickers[this].destroy();
-        delete pickers[this];
-      }
-    }
-  });
-});
-  
+function edit_row(no)
+{
+ document.getElementById("edit_button"+no).style.display="none";
+ document.getElementById("save_button"+no).style.display="inline";
+	
+ var fecha=document.getElementById("ac_fecha_row"+no);
+ var tipo=document.getElementById("ac_tipo_row"+no);
+ var hora=document.getElementById("ac_hora_row"+no);
+ var actividad=document.getElementById("ac_actividad_row"+no);
+ var obs=document.getElementById("ac_obs_row"+no);
+	
+ var fecha_data=fecha.innerHTML;
+ var tipo_data=tipo.innerHTML;
+ var hora_data=hora.innerHTML;
+ var actividad_data=actividad.innerHTML;
+ var obs_data=obs.innerHTML;
+	
+ fecha.innerHTML="<input type='text' id='fecha_text"+no+"' value='"+fecha_data+"'>";
+ tipo.innerHTML="<input type='text' id='tipo_text"+no+"' value='"+tipo_data+"'>";
+ hora.innerHTML="<input type='text' id='hora_text"+no+"' value='"+hora_data+"'>";
+ actividad.innerHTML="<input type='text' id='actividad_text"+no+"' value='"+actividad_data+"'>";
+ obs.innerHTML="<input type='text' id='obs_text"+no+"' value='"+obs_data+"'>";
 }
 
-$(".add-row").click(function(){
-  $("#editableTable").find("tbody tr:first").before("<tr><td data-field='name'></td><td data-field='name'></td><td data-field='name'></td><td data-field='name'></td><td data-field='name'></td><td><a class='button button-small edit' title='Edit'><i class='fa fa-pencil'></i></a> <a class='button button-small' title='Delete'><i class='fa fa-trash'></i></a></td></tr>");   
-  editTable();  
-  setTimeout(function(){   
-    $("#editableTable").find("tbody tr:first td:last a[title='Edit']").click(); 
-  }, 200); 
-  
-  setTimeout(function(){ 
-    $("#editableTable").find("tbody tr:first td:first input[type='text']").focus();
-      }, 300); 
-  
-   $("#editableTable").find("a[title='Delete']").unbind('click').click(function(e){
-        $(this).closest("tr").remove();
-    });
-   
-});
+function save_row(no)
+{
+ var fecha_val=document.getElementById("fecha_text"+no).value;
+ var tipo_val=document.getElementById("tipo_text"+no).value;
+ var hora_val=document.getElementById("hora_text"+no).value;
+ var actividad_val=document.getElementById("actividad_text"+no).value;
+ var obs_val=document.getElementById("obs_text"+no).value ;
 
-function myFunction() {
-    
+ document.getElementById("ac_fecha_row"+no).innerHTML=fecha_val;
+ document.getElementById("ac_tipo_row"+no).innerHTML=tipo_val;
+ document.getElementById("ac_hora_row"+no).innerHTML=hora_val;
+ document.getElementById("ac_actividad_row"+no).innerHTML=actividad_val;
+ document.getElementById("ac_obs_row"+no).innerHTML=obs_val;
+
+ document.getElementById("edit_button"+no).style.display="inline";
+ document.getElementById("save_button"+no).style.display="none";
 }
 
-$("#editableTable").find("a[title='Delete']").click(function(e){  
-  var x;
-    if (confirm("Are you sure you want to delete entire row?") == true) {
-        $(this).closest("tr").remove();
-    } else {
-        
-    }     
-});
+function delete_row(no)
+{
+ document.getElementById("row"+no+"").outerHTML="";
+}
+
+function add_row()
+{
+ var new_fecha=document.getElementById("new_ac_fecha").value;
+ var new_tipo=document.getElementById("new_ac_tipo").value;
+ var new_hora=document.getElementById("new_ac_hora").value;
+ var new_actividad=document.getElementById("new_ac_actividad").value;
+ var new_obs=document.getElementById("new_ac_obs").value;
+	
+ var table=document.getElementById("data_table");
+ var table_len=(table.rows.length)-1;
+ var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='ac_fecha_row"+table_len+"'>"+new_fecha+"</td><td id='ac_tipo_row"+table_len+"'>"+new_tipo+"</td><td id='ac_hora_row"+table_len+"'>"+new_hora+"</td><td id='ac_actividad_row"+table_len+"'>"+new_actividad+"</td><td id='ac_obs_row"+table_len+"'>"+new_obs+"</td><td><input type='button' id='edit_button"+table_len+"' value='Editar' class='edit' onclick='edit_row("+table_len+")'><input type='button' id='save_button"+table_len+"' value='Guardar' class='save' onclick='save_row("+table_len+")'><input type='button' value='Borrar' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
+
+ document.getElementById("new_ac_fecha").value="";
+ document.getElementById("new_ac_tipo").value="";
+ document.getElementById("new_ac_hora").value="";
+ document.getElementById("new_ac_actividad").value="";
+ document.getElementById("new_ac_obs").value="";
+}
