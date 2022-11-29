@@ -19,7 +19,7 @@ body {
 	color: #363636;
 }
 
-.botonAtras {
+.fa-reply {
 	margin-left: 2rem;
 	margin-top: 2rem;
 	position: fixed;
@@ -28,9 +28,6 @@ body {
 	cursor: pointer;
 	background: none;
 	border: none;
-}
-
-.fa-reply {
 	color: white;
     font-size: 3rem;
 }
@@ -124,7 +121,7 @@ input:focus ~ input[type="email"]::placeholder {
 	filter: invert(100%);
 }
 
-.botonForm {
+button {
 	width: 220px;
 	height: 38px;
 	border: 2px solid #142b54;
@@ -136,12 +133,12 @@ input:focus ~ input[type="email"]::placeholder {
 		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.botonForm:hover {
+button:hover {
     background-color: white;
     color:#1e3660;
 }
 
-.botonForm:active {
+button:active {
 	transform: scale(1.05);
 	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
