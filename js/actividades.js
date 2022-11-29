@@ -15,11 +15,11 @@ function edit_row(no)
  var actividad_data=actividad.innerHTML;
  var obs_data=obs.innerHTML;
 	
- fecha.innerHTML="<input type='text' id='fecha_text"+no+"' value='"+fecha_data+"'>";
- tipo.innerHTML="<input type='text' id='tipo_text"+no+"' value='"+tipo_data+"'>";
- hora.innerHTML="<input type='text' id='hora_text"+no+"' value='"+hora_data+"'>";
- actividad.innerHTML="<input type='text' id='actividad_text"+no+"' value='"+actividad_data+"'>";
- obs.innerHTML="<input type='text' id='obs_text"+no+"' value='"+obs_data+"'>";
+ fecha.innerHTML="<input class='littleInput' type='text' id='fecha_text"+no+"' value='"+fecha_data+"'>";
+ tipo.innerHTML="<input class='littleInput' type='text' id='tipo_text"+no+"' value='"+tipo_data+"'>";
+ hora.innerHTML="<input class='littleInput' type='text' id='hora_text"+no+"' value='"+hora_data+"'>";
+ actividad.innerHTML="<input class='littleInput' type='text' id='actividad_text"+no+"' value='"+actividad_data+"'>";
+ obs.innerHTML="<input class='littleInput' type='text' id='obs_text"+no+"' value='"+obs_data+"'>";
 }
 
 function save_row(no)

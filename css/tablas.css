@@ -48,7 +48,7 @@ body {
 }
 
 .littleInput {
-  width: 110px;
+  width: 250px;
 }
 
 th {
@@ -70,4 +70,16 @@ input[value="Save"]{
 h1 {
   text-align: center;
   margin-top: 1%;
+}
+
+.littleAlumno th {
+  font-size: 12px;
+}
+
+.littleAlumno td {
+  font-size: 10px;
+}
+
+.littleAlumno .littleInput {
+  width: 110px;
 }

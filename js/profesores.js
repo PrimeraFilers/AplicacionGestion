@@ -13,10 +13,10 @@ function edit_row(no)
  var passwordTP_data=passwordTP.innerHTML;
  var emailTP_data=emailTP.innerHTML;
 	
- nombreAlumnoTP.innerHTML="<input type='text' id='nombreAlumnoTP_text"+no+"' value='"+nombreAlumnoTP_data+"'>";
- apellidosTP.innerHTML="<input type='text' id='apellidosTP_text"+no+"' value='"+apellidosTP_data+"'>";
- passwordTP.innerHTML="<input type='text' id='passwordTP_text"+no+"' value='"+passwordTP_data+"'>";
- emailTP.innerHTML="<input type='text' id='emailTP_text"+no+"' value='"+emailTP_data+"'>";
+ nombreAlumnoTP.innerHTML="<input class='littleInput' type='text' id='nombreAlumnoTP_text"+no+"' value='"+nombreAlumnoTP_data+"'>";
+ apellidosTP.innerHTML="<input class='littleInput' type='text' id='apellidosTP_text"+no+"' value='"+apellidosTP_data+"'>";
+ passwordTP.innerHTML="<input class='littleInput' type='text' id='passwordTP_text"+no+"' value='"+passwordTP_data+"'>";
+ emailTP.innerHTML="<input class='littleInput' type='text' id='emailTP_text"+no+"' value='"+emailTP_data+"'>";
 }
 
 function save_row(no)
