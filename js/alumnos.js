@@ -1,6 +1,6 @@
 function edit_row(no) {
     document.getElementById("edit_button" + no).style.display = "none";
-    document.getElementById("save_button" + no).style.display = "block";
+    document.getElementById("save_button" + no).style.display = "inline";
 
     var nombreA = document.getElementById("nombreA" + no);
     var apellidosA = document.getElementById("apellidosA" + no);
@@ -55,6 +55,7 @@ function save_row(no) {
     var dualA_val = document.getElementById("dualA_text" + no).value;
     var fctA_val = document.getElementById("fctA_text" + no).value;
     var observacionesA_val = document.getElementById("observacionesA_text" + no).value;
+    document.getElementById("save_button"+no).style.display="none";
 
     document.getElementById("nombreA" + no).innerHTML = nombreA_val;
     document.getElementById("apellidosA" + no).innerHTML = apellidosA_val;
@@ -69,7 +70,7 @@ function save_row(no) {
     document.getElementById("fctA" + no).innerHTML = fctA_val;
     document.getElementById("observacionesA" + no).innerHTML = observacionesA_val;
 
-    document.getElementById("edit_button" + no).style.display = "block";
+    document.getElementById("edit_button" + no).style.display = "inline";
     document.getElementById("save_button" + no).style.display = "none";
 }
 
