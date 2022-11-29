@@ -15,11 +15,11 @@ function edit_row(no)
  var responsable_e_data=responsable_e.innerHTML;
  var observaciones_e_data=observaciones_e.innerHTML;
 	
- nombre_e.innerHTML="<input type='text' id='nombre_e_text"+no+"' value='"+nombre_e_data+"'>";
- telefono_e.innerHTML="<input type='text' id='telefono_e_text"+no+"' value='"+ telefono_e_data+"'>";
- email_e.innerHTML="<input type='text' id='email_e_text"+no+"' value='"+email_e_data+"'>";
- responsable_e.innerHTML="<input type='text' id='responsable_e_text"+no+"' value='"+responsable_e_data+"'>";
- observaciones_e.innerHTML="<input type='text' id='observaciones_e_text"+no+"' value='"+observaciones_e_data+"'>";
+ nombre_e.innerHTML="<input class='littleInput' type='text' id='nombre_e_text"+no+"' value='"+nombre_e_data+"'>";
+ telefono_e.innerHTML="<input class='littleInput' type='text' id='telefono_e_text"+no+"' value='"+ telefono_e_data+"'>";
+ email_e.innerHTML="<input class='littleInput' type='text' id='email_e_text"+no+"' value='"+email_e_data+"'>";
+ responsable_e.innerHTML="<input class='littleInput' type='text' id='responsable_e_text"+no+"' value='"+responsable_e_data+"'>";
+ observaciones_e.innerHTML="<input class='littleInput' type='text' id='observaciones_e_text"+no+"' value='"+observaciones_e_data+"'>";
 }
 
 function save_row(no)
