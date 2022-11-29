@@ -17,10 +17,8 @@ function iniciosesion() {
 }
 
 var z = document.querySelector(".enter").addEventListener("click", iniciosesion);
-var a = document.querySelector(".correo");
-var b = document.querySelector(".psswd");
-a.addEventListener("input",vaciadax);
-b.addEventListener("input",vaciaday);
+x.addEventListener("input",vaciadax);
+y.addEventListener("input",vaciaday);
 var c = document.querySelector(".enter").addEventListener("click", textada);
 
 
@@ -33,11 +31,9 @@ function textada(){
         document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
     } else if (x.value !== "joseantonio@profesores.com" || y.value !== "joseantonio") {
         document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
-    } else {
-        document.querySelector(".emailada").textContent="Datos correctos";
-        document.querySelector(".emailada").style.color="green";
     }
 }
+
 function vaciadax(){
     if (x.value==""){
         document.querySelector(".emailada").textContent="Por favor introduzca el correo electrónico";
