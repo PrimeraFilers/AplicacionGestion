@@ -6,7 +6,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	overflow: hidden;
-	background: url("https://i.pinimg.com/564x/0e/58/17/0e5817b2f5a8e955103255569de24896.jpg")
+	background: url(/img/fondo-login.jpg)
 		no-repeat center center;
 	background-size: cover;
 	backdrop-filter: blur(7px);
