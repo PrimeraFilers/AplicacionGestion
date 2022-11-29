@@ -3,9 +3,7 @@
     background-color: white;
     border-collapse: collapse !important;
     border-radius: 20px;
-    border-style: hidden; 
-  
-  
+    border-style: hidden;
   }
   
   #data_table th, td {
@@ -13,7 +11,7 @@
   }
   
   #data_table td, th {
-    padding: 20px;
+    padding: 10px;
   }
   
   #data_table th {
@@ -38,4 +36,8 @@
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(15, 116, 231) 35%, rgb(174, 236, 248) 100%);
     background-repeat: no-repeat;
     background-size: auto 800%;
-  } 
+  }
+
+  .littleInput {
+    width: 100%;
+  }
