@@ -164,7 +164,7 @@ input:focus ~ input[type="email"]::placeholder {
 }
 
 .tooltip .tooltiptext {
-	font-size: 1rem;
+	font-size: small;
 	visibility: hidden;
 	width: 120px;
 	background-color: #142b54;
