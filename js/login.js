@@ -19,14 +19,23 @@ function iniciosesion() {
 var z = document.querySelector(".enter").addEventListener("click", iniciosesion);
 var a = document.querySelector(".correo");
 var b = document.querySelector(".psswd");
-a.addEventListener("blur",vaciadax);
-b.addEventListener("blur",vaciaday);
+a.addEventListener("input",vaciadax);
+b.addEventListener("input",vaciaday);
 var c = document.querySelector(".enter").addEventListener("click", textada);
 
 
 function textada(){
     if (x.value!=="javier@alumnos.com" || y.value!=="javier123"){
         document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
+    }  else if (x.value !== "fran@alumnos.com" || y.value !== "fran456") {
+        document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
+    } else if (x.value !== "francisco@profesores.com" || y.value !== "francisco") {
+        document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
+    } else if (x.value !== "joseantonio@profesores.com" || y.value !== "joseantonio") {
+        document.querySelector(".emailada").textContent="Correo electrónico o contraseña incorrectos";
+    } else {
+        document.querySelector(".emailada").textContent="Datos correctos";
+        document.querySelector(".emailada").style.color="green";
     }
 }
 function vaciadax(){
