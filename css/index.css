@@ -30,7 +30,7 @@ button {
     left: 0;
     width: 72px;
     height: 100%;
-    background: #dd9e5a;
+    background: #0d6efd;
     transition: 0.4s;
 }
 
@@ -103,7 +103,7 @@ button {
 
 .sidebar > nav:not(:last-child) {
     padding-bottom: 1rem;
-    border-bottom: 1px solid #925a27;
+    border-bottom: 1px solid #1e3660;
     margin-bottom: 1rem;
 }
 
@@ -155,7 +155,7 @@ button {
 }
 
 .text-dev a {
-    color: #fd910d;
+    color: #0d6efd;
     font-weight: 800;
 }
 
