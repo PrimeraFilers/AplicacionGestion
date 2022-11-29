@@ -28,18 +28,18 @@ function edit_row(no) {
     var fctA_data = fctA.innerHTML;
     var observacionesA_data = observacionesA.innerHTML;
 
-    nombreA.innerHTML = "<input type='text' id='nombreA_text" + no + "' value='" + nombreA_data + "'>";
-    apellidosA.innerHTML = "<input type='text' id='apellidosA_text" + no + "' value='" + apellidosA_data + "'>";
-    contrasenaA.innerHTML = "<input type='text' id='contrasenaA_text" + no + "' value='" + contrasenaA_data + "'>";
-    dniA.innerHTML = "<input type='text' id='dniA_text" + no + "' value='" + dniA_data + "'>";
-    fechaA.innerHTML = "<input type='text' id='fechaA_text" + no + "' value='" + fechaA_data + "'>";
-    emailA.innerHTML = "<input type='text' id='emailA_text" + no + "' value='" + emailA_data + "'>";
-    telefonoA.innerHTML = "<input type='text' id='telefonoA_text" + no + "' value='" + telefonoA_data + "'>";
-    empresaA.innerHTML = "<input type='text' id='empresaA_text" + no + "' value='" + empresaA_data + "'>";
-    tutorA.innerHTML = "<input type='text' id='tutorA_text" + no + "' value='" + tutorA_data + "'>";
-    dualA.innerHTML = "<input type='text' id='dualA_text" + no + "' value='" + dualA_data + "'>";
-    fctA.innerHTML = "<input type='text' id='fctA_text" + no + "' value='" + fctA_data + "'>";
-    observacionesA.innerHTML = "<input type='text' id='observacionesA_text" + no + "' value='" + observacionesA_data + "'>";
+    nombreA.innerHTML = "<input class='littleInput' type='text' id='nombreA_text" + no + "' value='" + nombreA_data + "'>";
+    apellidosA.innerHTML = "<input class='littleInput' type='text' id='apellidosA_text" + no + "' value='" + apellidosA_data + "'>";
+    contrasenaA.innerHTML = "<input class='littleInput' type='text' id='contrasenaA_text" + no + "' value='" + contrasenaA_data + "'>";
+    dniA.innerHTML = "<input class='littleInput' type='text' id='dniA_text" + no + "' value='" + dniA_data + "'>";
+    fechaA.innerHTML = "<input class='littleInput' type='text' id='fechaA_text" + no + "' value='" + fechaA_data + "'>";
+    emailA.innerHTML = "<input class='littleInput' type='text' id='emailA_text" + no + "' value='" + emailA_data + "'>";
+    telefonoA.innerHTML = "<input class='littleInput' type='text' id='telefonoA_text" + no + "' value='" + telefonoA_data + "'>";
+    empresaA.innerHTML = "<input class='littleInput' type='text' id='empresaA_text" + no + "' value='" + empresaA_data + "'>";
+    tutorA.innerHTML = "<input class='littleInput' type='text' id='tutorA_text" + no + "' value='" + tutorA_data + "'>";
+    dualA.innerHTML = "<input class='littleInput' type='text' id='dualA_text" + no + "' value='" + dualA_data + "'>";
+    fctA.innerHTML = "<input class='littleInput' type='text' id='fctA_text" + no + "' value='" + fctA_data + "'>";
+    observacionesA.innerHTML = "<input class='littleInput' type='text' id='observacionesA_text" + no + "' value='" + observacionesA_data + "'>";
 }
 
 function save_row(no) {
