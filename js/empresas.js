@@ -55,7 +55,7 @@ function add_row()
 	
  var table=document.getElementById("data_table");
  var table_len=(table.rows.length)-1;
- var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='nombre_empresa_row"+table_len+"'>"+nuevo_nombre_e+"</td><td id='telefono_empresa_row"+table_len+"'>"+nuevo_telefono_e+"</td><td id='email_empresa_row"+table_len+"'>"+nuevo_email_e+"</td><td id='responsable_empresa_row"+table_len+"'>"+nuevo_responsable_e+"</td><td id='observaciones_empresa_row"+table_len+"'>"+nuevo_observaciones_e+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
+ var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='nombre_empresa_row"+table_len+"'>"+nuevo_nombre_e+"</td><td id='telefono_empresa_row"+table_len+"'>"+nuevo_telefono_e+"</td><td id='email_empresa_row"+table_len+"'>"+nuevo_email_e+"</td><td id='responsable_empresa_row"+table_len+"'>"+nuevo_responsable_e+"</td><td id='observaciones_empresa_row"+table_len+"'>"+nuevo_observaciones_e+"</td><td><input type='button' id='edit_button"+table_len+"' value='Editar' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Guardar' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Borrar' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
 
  document.getElementById("nuevo_nombre_e").value="";
  document.getElementById("nuevo_telefono_e").value="";
