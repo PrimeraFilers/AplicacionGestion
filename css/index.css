@@ -5,7 +5,9 @@
 
 body {
     margin: 0;
-    background-color: #d2f5ff;
+    background-image: url(/img/fondo-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 article {
