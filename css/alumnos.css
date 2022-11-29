@@ -52,3 +52,8 @@ th {
 #data_table td {
     font-size: 14px;
   }
+
+  
+input[value="Save"]{
+  display:none;
+  }
