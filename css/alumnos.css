@@ -62,3 +62,8 @@ th {
 input[value="Save"]{
   display:none;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+}
