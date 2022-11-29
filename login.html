@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+	<script src="https://kit.fontawesome.com/63d7843a76.js" crossorigin="anonymous"></script>
 	
     <title>Login</title>
 </head>
 <body>
     <main class="container">
+		<button class="botonAtras" onclick="location.href='index.html'">
+			<i class="fa-solid fa-reply tooltip">
+				<span class="tooltiptext">Volver atrás</span>
+			</i>
+		</button>
 		<section class="content">
 			<article class="form">
 				<img id="fotoPerfil" src="https://i.pinimg.com/236x/4d/a8/bb/4da8bb993057c69a85b9b6f2775c9df2.jpg" alt="profile">
 				<input type="email" class="correo" autocomplete placeholder="Email">
 				<input type="password" class="psswd" placeholder="Contraseña">
-				<button type="submit" class="enter">Entrar</button>
+				<button class="botonForm" type="submit" class="enter">Entrar</button>
 				<p class="emailada"></p> 
 				<p class="contrasada"></p>
 				<a href="#" id="r">¿Has olvidado tu contraseña?</a>
