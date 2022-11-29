@@ -59,6 +59,10 @@ th {
   font-size: 14px;
 }
   
+input[value="Guardar"]{
+  display:none;
+}
+
 input[value="Save"]{
   display:none;
 }
