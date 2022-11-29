@@ -5,19 +5,42 @@
 
 body {
     margin: 0;
-    background-color: #121212;
+    background-image: url(/img/fondo-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: #1e3660;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1e3660;
 }
 
 .botonIndex {
     background: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
+}
+
+.botonLogin {
+    text-align: center;
+    background-color: #1e3660;
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
 }
 
