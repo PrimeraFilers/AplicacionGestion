@@ -10,9 +10,9 @@ function iniciosesion() {
     } else if (x.value == "fran@alumnos.com" && y.value == "fran123") {
         window.location.href = "alumno-fran/index.html";
     } else if (x.value == "francisco@profesores.com" && y.value == "francisco123") {
-        window.location.href = "profesores-francisco.html";
+        window.location.href = "profesor-francisco/index.html";
     } else if (x.value == "joseantonio@profesores.com" && y.value == "joseantonio123") {
-        window.location.href = "profesores-joseasntonio.html";
+        window.location.href = "profesor-joseantonio/index.html";
     } 
 }
 
