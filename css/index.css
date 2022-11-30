@@ -19,7 +19,7 @@ main {
     width: 50vw;
 }
 
-article {
+.textoInicial {
     margin-top: 25vh;
     display: flex;
     flex-direction: column;
@@ -40,4 +40,11 @@ p {
     font-weight: bold;
     text-align: center;
     color: #1e3660;
+}
+
+.grupoBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
