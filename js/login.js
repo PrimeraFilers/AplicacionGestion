@@ -6,9 +6,9 @@ console.log(y);
 
 function iniciosesion() {
     if (x.value == "javier@alumnos.com" && y.value == "javier123") {
-        window.location.href = "actividades-javi.html";
+        window.location.href = "alumno-javier/index.html";
     } else if (x.value == "fran@alumnos.com" && y.value == "fran456") {
-        window.location.href = "actividades-fran.html";
+        window.location.href = "alumno-fran/index.html";
     } else if (x.value == "francisco@profesores.com" && y.value == "francisco") {
         window.location.href = "profesores-francisco.html";
     } else if (x.value == "joseantonio@profesores.com" && y.value == "joseantonio") {

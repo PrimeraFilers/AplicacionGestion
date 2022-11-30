@@ -3,51 +3,52 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <title>Empresas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Empresas</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/tablas.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <script src="https://kit.fontawesome.com/63d7843a76.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/tablas.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <script src="https://kit.fontawesome.com/63d7843a76.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <button type="button" class="burger" onclick="toggleSidebar()"></button>
   <img class="logo" src="img/logo.png" />
-  
+
   <aside class="sidebar">
 
-      <header class="sidebar-header"></header>
+    <header class="sidebar-header"></header>
 
-      <nav>
+    <nav>
 
-          <button type="button" class="botonIndex" onclick="location.href='index.html'">
-              <i class="fa-solid fa-house"></i>
-              <span>Home</span>
-          </button>
+      <button type="button" class="botonIndex" onclick="location.href='index.html'">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </button>
 
-      </nav>
+    </nav>
 
-      <nav>
+    <nav>
 
-          <button type="button" class="botonIndex" onclick="location.href='login.html'">
-              <i class="fa-solid fa-right-to-bracket"></i>
-              <span>Login</span>
-          </button>
+      <button type="button" class="botonIndex" onclick="location.href='login.html'">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <span>Login</span>
+      </button>
 
-      </nav>
+    </nav>
 
   </aside>
 
   <div id="wrapper">
-    <table id="data_table" >
+    <table id="data_table">
       <tr>
         <th>Nombre de la empresa</th>
         <th>Teléfono</th>
@@ -121,6 +122,7 @@
 
   </div>
 
+  <script src="../js/nav.js"></script>
   <script type="text/javascript" src="js/empresas.js"></script>
 </body>
 
