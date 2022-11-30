@@ -1,5 +1,11 @@
 #wrapper {
   margin-top: 5%;
+  margin-left: 10vw;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #data_table {
@@ -8,6 +14,8 @@
   border-collapse: collapse !important;
   border-radius: 20px;
   border-style: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
 }
   
 #data_table th, td {
