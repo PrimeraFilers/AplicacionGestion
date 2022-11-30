@@ -39,7 +39,7 @@ tr:last-of-type td:last-of-type {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(15, 116, 231) 35%, rgb(174, 236, 248) 100%);
+  background: linear-gradient(0deg, rgb(31, 75, 132) 0%, rgb(90, 147, 213) 35%, rgb(174, 236, 248) 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
