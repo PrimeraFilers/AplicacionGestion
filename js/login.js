@@ -7,12 +7,12 @@ console.log(y);
 function iniciosesion() {
     if (x.value == "javier@alumnos.com" && y.value == "javier123") {
         window.location.href = "alumno-javier/index.html";
-    } else if (x.value == "fran@alumnos.com" && y.value == "fran456") {
+    } else if (x.value == "fran@alumnos.com" && y.value == "fran123") {
         window.location.href = "alumno-fran/index.html";
-    } else if (x.value == "francisco@profesores.com" && y.value == "francisco") {
+    } else if (x.value == "francisco@profesores.com" && y.value == "francisco123") {
         window.location.href = "profesores-francisco.html";
-    } else if (x.value == "joseantonio@profesores.com" && y.value == "joseantonio") {
-        window.location.href = "profesores-joseantonio.html";
+    } else if (x.value == "joseantonio@profesores.com" && y.value == "joseantonio123") {
+        window.location.href = "profesores-joseasntonio.html";
     } 
 }
 
