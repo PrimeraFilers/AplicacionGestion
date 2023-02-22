@@ -1,0 +1,23 @@
+[
+  {
+      "fecha": "22 de febrero",
+      "tipoPractica": "FCT",
+      "totalHoras": "5",
+      "actividadRealizada": "Desarrollo de aplicación web",
+      "observacionesIncidencias": "Estoy programando una aplicación web para la gestión de tareas."
+  },
+  {
+      "fecha": "2 de enero",
+      "tipoPractica": "Dual",
+      "totalHoras": "8",
+      "actividadRealizada": "Curso de programación Java",
+      "observacionesIncidencias": "Estoy aprendiendo Java a través de un curso especializado."
+  },
+  {
+      "fecha": "10 de mayo",
+      "tipoPractica": "FCT",
+      "totalHoras": "6",
+      "actividadRealizada": "Testing de software",
+      "observacionesIncidencias": "Estoy realizando pruebas de software para una aplicación de gestión empresarial."
+  }
+]
