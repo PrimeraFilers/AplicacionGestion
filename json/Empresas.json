@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "NTTData",
+        "telefono": "952463244",
+        "email": "nttdata@gmail.com",
+        "responsable": "José Nishikori",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Transnational",
+        "telefono": "952831841",
+        "email": "transnational@gmail.com",
+        "responsable": "Mikel Ehrmantraut",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Viewnext",
+        "telefono": "952858284",
+        "email": "viewnext@gmail.com",
+        "responsable": "Reyes Delgado",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Solbyte",
+        "telefono": "952991652",
+        "email": "solbyte@gmail.com",
+        "responsable": "Eugenio Colibrí",
+        "observaciones": ""
+    }
+]
