@@ -1,0 +1,23 @@
+[
+    {
+        "fecha": "15 de noviembre",
+        "tipoPractica": "Dual",
+        "totalHoras": "6",
+        "actividadRealizada": "Curso de formación PHP",
+        "observacionesIncidencias": "Estoy aprendiendo PHP a través de un curso de PHP especializado"
+    },
+    {
+        "fecha": "16 de marzo",
+        "tipoPractica": "FCT",
+        "totalHoras": "7",
+        "actividadRealizada": "Ayuda proyecto web",
+        "observacionesIncidencias": "Estoy ayudando con el proyecto web de cruceros de la empresa"
+    },
+    {
+        "fecha": "9 de junio",
+        "tipoPractica": "FCT",
+        "totalHoras": "8",
+        "actividadRealizada": "Perfilando web",
+        "observacionesIncidencias": "Estoy dándole los últimos retoques a la web de los cruceros"
+    }
+]
