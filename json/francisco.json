@@ -1,0 +1,23 @@
+[
+  {
+      "fecha": "30 de septiembre",
+      "tipoPractica": "Dual",
+      "totalHoras": "5",
+      "actividadRealizada": "Desarrollo de aplicaciones móviles",
+      "observacionesIncidencias": "Estoy aprendiendo a desarrollar aplicaciones móviles en iOS y Android"
+  },
+  {
+      "fecha": "21 de abril",
+      "tipoPractica": "FCT",
+      "totalHoras": "8",
+      "actividadRealizada": "Investigación de mercado",
+      "observacionesIncidencias": "Estoy investigando el mercado de cruceros y analizando las tendencias actuales"
+  },
+  {
+      "fecha": "4 de agosto",
+      "tipoPractica": "FCT",
+      "totalHoras": "6",
+      "actividadRealizada": "Optimización de SEO",
+      "observacionesIncidencias": "Estoy trabajando en la optimización del SEO de la página web de la empresa"
+  }
+]
