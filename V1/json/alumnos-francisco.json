@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Álvaro",
+        "apellidos": "Takahashi González",
+        "contrasena": "Tak@123",
+        "dni": "11223345Y",
+        "fecha-nacimiento": "09/09/2000",
+        "email": "alvaro@alumnos.com",
+        "telefono": "678905432",
+        "empresa": "NTTData",
+        "tutor": "Francisco",
+        "horas-dual": "400",
+        "horas-fct": "200",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Ermenejildo",
+        "apellidos": "Transformer Pérez",
+        "contrasena": "Perez@456",
+        "dni": "11253946Z",
+        "fecha-nacimiento": "19/12/2002",
+        "email": "ermenejildo@alumnos.com",
+        "telefono": "679814321",
+        "empresa": "Transnational S.L",
+        "tutor": "Francisco",
+        "horas-dual": "300",
+        "horas-fct": "100",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Javier",
+        "apellidos": "Góngora de Quevedo",
+        "contrasena": "javier123",
+        "dni": "12142854X",
+        "fecha-nacimiento": "30/11/1997",
+        "email": "javier@alumnos.com",
+        "telefono": "79824951",
+        "empresa": "Solbyte",
+        "tutor": "Francisco",
+        "horas-dual": "200",
+        "horas-fct": "50",
+        "observaciones": ""
+    }
+]

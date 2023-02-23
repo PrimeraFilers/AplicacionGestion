@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+body {
+    margin: 0;
+    background-color: #b6cbf1;
+    background-image: url(/img/fondo-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    margin: auto;
+    width: 50vw;
+}
+
+.textoInicial {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1e3660;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1e3660;
+}
+
+.grupoBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

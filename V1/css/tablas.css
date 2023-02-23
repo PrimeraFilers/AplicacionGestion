@@ -1,0 +1,93 @@
+#wrapper {
+  margin-top: 5%;
+  margin-left: 10vw;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#data_table {
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+  
+#data_table th, td {
+  border: 2px solid rgb(162, 167, 194);
+}
+  
+#data_table td, th {
+  padding: 10px;
+}
+  
+#data_table th {
+  background-color: rgb(224, 228, 247);
+}
+  
+th:first-of-type {
+  border-top-left-radius: 20px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 20px;
+}
+
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+
+body {
+  background: linear-gradient(0deg, rgb(31, 75, 132) 0%, rgb(90, 147, 213) 35%, rgb(174, 236, 248) 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.littleInput {
+  width: 250px;
+}
+
+th {
+  font-size: 16px;
+}
+
+#data_table td {
+  font-size: 14px;
+}
+  
+input[value="Guardar"]{
+  display:none;
+}
+
+input[value="Save"]{
+  display:none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.littleAlumno th {
+  font-size: 12px;
+}
+
+.littleAlumno td {
+  font-size: 10px;
+}
+
+.littleAlumno .littleInput {
+  width: 110px;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "fecha": "21 de febrero",
+        "tipoPractica": "Dual",
+        "totalHoras": "5",
+        "actividadRealizada": "Desarrollo de aplicaciones Android",
+        "observacionesIncidencias": "Estoy trabajando en un proyecto de desarrollo de aplicaciones Android para un cliente"
+    },
+    {
+        "fecha": "10 de julio",
+        "tipoPractica": "FCT",
+        "totalHoras": "6",
+        "actividadRealizada": "Mantenimiento de servidores",
+        "observacionesIncidencias": "Estoy ayudando en el mantenimiento y configuración de los servidores de la empresa"
+    },
+    {
+        "fecha": "5 de septiembre",
+        "tipoPractica": "Dual",
+        "totalHoras": "7",
+        "actividadRealizada": "Desarrollo de aplicaciones web",
+        "observacionesIncidencias": "Estoy trabajando en el desarrollo de aplicaciones web utilizando React y Node.js"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Lizzy",
+        "apellidos": "Pinkzy Ripz",
+        "contrasena": "Zardada78",
+        "dni": "22334455C",
+        "fecha-nacimiento": "29/05/2001",
+        "email": "lizzy@alumnos.com",
+        "telefono": "654123986",
+        "empresa": "ViewNext",
+        "tutor": "José Antonio",
+        "horas-dual": "400",
+        "horas-fct": "200",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Goku",
+        "apellidos": "Fett Evans",
+        "contrasena": "gokulegana987",
+        "dni": "11250546G",
+        "fecha-nacimiento": "19/12/2002",
+        "email": "goku@alumnos.com",
+        "telefono": "671563745",
+        "empresa": "Transnational S.L",
+        "tutor": "José Antonio",
+        "horas-dual": "300",
+        "horas-fct": "100",
+        "observaciones": ""
+    },
+    {
+        "nombre": "Francisco",
+        "apellidos": "Dalí Lorca",
+        "contrasena": "fran123",
+        "dni": "21253945L",
+        "fecha-nacimiento": "10/02/1995",
+        "email": "fran@alumnos.com",
+        "telefono": "68829956",
+        "empresa": "NTTData",
+        "tutor": "José Antonio",
+        "horas-dual": "200",
+        "horas-fct": "50",
+        "observaciones": ""
+    }
+]

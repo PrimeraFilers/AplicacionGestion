@@ -1,0 +1,23 @@
+[
+    {
+        "fecha": "25 de septiembre",
+        "tipoPractica": "Dual",
+        "totalHoras": "5",
+        "actividadRealizada": "Curso de programación en Python",
+        "observacionesIncidencias": "Estoy aprendiendo a programar en Python para poder automatizar procesos en la empresa"
+    },
+    {
+        "fecha": "10 de enero",
+        "tipoPractica": "FCT",
+        "totalHoras": "7",
+        "actividadRealizada": "Desarrollo de aplicación móvil",
+        "observacionesIncidencias": "Estoy colaborando en el desarrollo de una aplicación móvil para la empresa"
+    },
+    {
+        "fecha": "2 de mayo",
+        "tipoPractica": "FCT",
+        "totalHoras": "6",
+        "actividadRealizada": "Análisis de datos",
+        "observacionesIncidencias": "Estoy trabajando en el análisis de datos de la empresa para mejorar la toma de decisiones"
+    }
+]

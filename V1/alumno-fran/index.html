@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <title>Aplicación de gestión</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="https://kit.fontawesome.com/63d7843a76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <button type="button" class="burger" onclick="toggleSidebar()"></button>
+    <img class="logo" src="../img/logo.png" />
+
+    <aside class="sidebar">
+
+        <header class="sidebar-header"></header>
+
+        <nav>
+
+            <button type="button" class="botonIndex" onclick="location.href='index.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </button>
+
+        </nav>
+
+        <nav>
+
+            <button type="button" class="botonIndex" onclick="location.href='../index.html'">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </nav>
+
+        <nav>
+
+            <button type="button" class="botonIndex" onclick="location.href='actividades.html'">
+                <i class="fa-solid fa-note-sticky"></i>
+                <span>Actividades</span>
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <main>
+
+        <section>
+
+            <article class="textoInicial">
+                <h1>Bienvenido, Francisco.</h1>
+                <p>Empiece ahora a gestionar sus prácticas.</p>
+                <button class="botonLogin" onclick="location.href='actividades.html'">Gestionar actividades</button>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/nav.js"></script>
+</body>
+
+</html>
