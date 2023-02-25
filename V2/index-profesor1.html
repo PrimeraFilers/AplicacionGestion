@@ -19,7 +19,7 @@
     <aside class="sidebar">
         <header class="sidebar-header"></header>
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='index-alumno.html'">
+            <button type="button" class="botonIndex" onclick="location.href='index-profesor1.html'">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </button>
@@ -33,9 +33,23 @@
         </nav>
 
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='actividades-alumno.html'">
-                <i class="fa-solid fa-note-sticky"></i>
-                <span>Actividades</span>
+            <button type="button" class="botonIndex" onclick="location.href='profesores.html'">
+                <i class="fa-solid fa-user-tie"></i>
+                <span>Profesores</span>
+            </button>
+        </nav>
+
+        <nav>
+            <button type="button" class="botonIndex" onclick="location.href='alumnos.html'">
+                <i class="fa-solid fa-children"></i>
+                <span>Alumnos</span>
+            </button>
+        </nav>
+
+        <nav>
+            <button type="button" class="botonIndex" onclick="location.href='empresas.html'">
+                <i class="fa-solid fa-building"></i>
+                <span>Empresas</span>
             </button>
         </nav>
     </aside>
@@ -44,14 +58,19 @@
         <section>
             <article class="textoInicial">
                 <h1>¡Bienvenido!</h1>
-                <p>Empiece ahora a gestionar sus prácticas.</p>
-                <button class="botonLogin" onclick="location.href='actividades-alumno.html'">Gestionar actividades</button>
+                <p>Empiece ahora a gestionar las prácticas.</p>
+            </article>
+
+            <article class="grupoBotones">
+                <button class="botonLogin" onclick="location.href='profesores.html'">Listado profesores</button>
+                <button class="botonLogin" onclick="location.href='alumnos.html'">Gestionar alumnos</button>
+                <button class="botonLogin" onclick="location.href='empresas.html'">Gestionar empresas</button>
             </article>
         </section>
     </main>
 
 
-    <script src="js/nav.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
