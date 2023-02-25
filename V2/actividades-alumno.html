@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="src/logo.png">
-    <title>Actividades</title>
+    <title>Actividades - Alumno</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -26,7 +26,7 @@
     <aside class="sidebar">
         <header class="sidebar-header"></header>
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='index-alumno.html'">
+            <button type="button" class="botonIndex" onclick="location.href='index-profesor.html'">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </button>
@@ -41,7 +41,7 @@
 
         <nav>
             <button type="button" class="botonIndex" onclick="location.href='actividades-alumno.html'">
-                <i class="fa-solid fa-note-sticky"></i>
+                <i class="fa-solid fa-user-tie"></i>
                 <span>Actividades</span>
             </button>
         </nav>
@@ -50,52 +50,58 @@
 
     <div class="m-0 vh-100 row justify-content-center align-items-center">
         <div class="col-auto p-5 text-center">
-            <table class="table table-dark">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Práctica</th>
-                        <th>Horas</th>
-                        <th>Actividades</th>
-                        <th>Observaciones</th>
-                        <th>Editar</th>
-                    </tr>
+            <table class="table table-dark table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" class="fs-5 p-3">Fecha</th>
+                    <th scope="col" class="fs-5 p-3">Práctica</th>
+                    <th scope="col" class="fs-5 p-3">Horas</th>
+                    <th scope="col" class="fs-5 p-3">Actividades</th>
+                    <th scope="col" class="fs-5 p-3">Observaciones</th>
+                    <th scope="col" class="fs-5 p-3">Editar</th>
+                  </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>22 de febrero</td>
-                        <td>FCT</td>
-                        <td>5</td>
-                        <td>Desarrollo de aplicación web</td>
-                        <td>Estoy programando una aplicación web para la gestión de tareas.</td>
+                        <td class="fw-light">22 de febrero</td>
+                        <td class="fw-light">FCT</td>
+                        <td class="fw-light">5</td>
+                        <td class="fw-light">Desarrollo de aplicación web</td>
+                        <td class="fw-light">Estoy programando una aplicación web para la gestión de tareas.</td>
                         <td class="boton">
-                            <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
-                            <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
-                            <input type="button" value="Borrar" class="delete" onclick="delete_row('1')">
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="edit_row('1')">Editar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="save_row('1')">Guardar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="delete_row('1')">Borrar</button>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>22 de febrero</td>
-                        <td>FCT</td>
-                        <td>5</td>
-                        <td>Desarrollo de aplicación web</td>
-                        <td>Estoy programando una aplicación web para la gestión de tareas.</td>
+                        <td class="fw-light">22 de febrero</td>
+                        <td class="fw-light">FCT</td>
+                        <td class="fw-light">5</td>
+                        <td class="fw-light">Desarrollo de aplicación web</td>
+                        <td class="fw-light">Estoy programando una aplicación web para la gestión de tareas.</td>
                         <td class="boton">
-                            <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
-                            <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
-                            <input type="button" value="Borrar" class="delete" onclick="delete_row('1')">
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="edit_row('1')">Editar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="save_row('1')">Guardar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="delete_row('1')">Borrar</button>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>22 de febrero</td>
-                        <td>FCT</td>
-                        <td>5</td>
-                        <td>Desarrollo de aplicación web</td>
-                        <td>Estoy programando una aplicación web para la gestión de tareas.</td>
+                        <td class="fw-light">22 de febrero</td>
+                        <td class="fw-light">FCT</td>
+                        <td class="fw-light">5</td>
+                        <td class="fw-light">Desarrollo de aplicación web</td>
+                        <td class="fw-light">Estoy programando una aplicación web para la gestión de tareas.</td>
                         <td class="boton">
-                            <input type="button" value="Editar">
-                            <input type="button" value="Guardar">
-                            <input type="button" value="Borrar">
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="edit_row('1')">Editar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="save_row('1')">Guardar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="delete_row('1')">Borrar</button>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
@@ -104,11 +110,11 @@
 
     </div>
     <template>
-        <td class="fecha"></td>
-        <td class="tipo"></td>
-        <td class="totalHoras"></td>
-        <td class="actividad"></td>
-        <td class="observaciones"></td>
+        <td class="fecha fw-light"></td>
+        <td class="tipo fw-light"></td>
+        <td class="totalHoras fw-light"></td>
+        <td class="actividad fw-light"></td>
+        <td class="observaciones fw-light"></td>
     </template>
 
     <script src="js/nav.js"></script>
