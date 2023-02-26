@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/logo.png">
+    <title>Actividades - Alumno</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/63d7843a76.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+
+<body class="fondo2">
+
+    <button type="button" class="burger" onclick="toggleSidebar()"></button>
+    <img class="logo" src="src/logo.png"/>
+
+    <aside class="sidebar">
+        <header class="sidebar-header"></header>
+        <nav>
+            <button type="button" class="botonIndex" onclick="location.href='index-alumno.html'">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </button>
+        </nav>
+
+        <nav>
+            <button type="button" class="botonIndex" onclick="location.href='index.html'">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+        </nav>
+
+        <nav>
+            <button type="button" class="botonIndex" onclick="location.href='actividades-alumno5.html'">
+                <i class="fa-solid fa-user-tie"></i>
+                <span>Actividades</span>
+            </button>
+        </nav>
+
+    </aside>
+
+    <div class="m-0 vh-100 row justify-content-center align-items-center">
+        <div class="col-auto p-5 text-center">
+            <table class="table table-dark table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" class="fs-5 p-3">Fecha</th>
+                    <th scope="col" class="fs-5 p-3">Práctica</th>
+                    <th scope="col" class="fs-5 p-3">Horas</th>
+                    <th scope="col" class="fs-5 p-3">Actividades</th>
+                    <th scope="col" class="fs-5 p-3">Observaciones</th>
+                    <th scope="col" class="fs-5 p-3">Editar</th>
+                  </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </div>
+
+    </div>
+    <template>
+        <td class="fecha fw-light"></td>
+        <td class="tipo fw-light"></td>
+        <td class="totalHoras fw-light"></td>
+        <td class="actividad fw-light"></td>
+        <td class="observaciones fw-light"></td>
+    </template>
+
+    <script src="js/nav.js"></script>
+    <script src="js/actividades5.js"></script>
+    
+</body>
+
+</html>
