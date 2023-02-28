@@ -90,20 +90,25 @@
     <template>
         <td class="nombre fw-light"></td>
         <td class="apellidos fw-light"></td>
-        <td class="contraseña fw-light"></td>
+        <td class="contrasena fw-light"></td>
         <td class="dni fw-light"></td>
-        <td class="fecha_nacimiento fw-light"></td>
+        <td class="fechaNacimiento fw-light"></td>
         <td class="email fw-light"></td>
         <td class="telefono fw-light"></td>
         <td class="empresa fw-light"></td>
         <td class="tutor fw-light"></td>
-        <td class="horas_dual fw-light"></td>
-        <td class="horas_fct fw-light"></td>
+        <td class="horasDual fw-light"></td>
+        <td class="horasFCT fw-light"></td>
         <td class="observaciones fw-light"></td>
+        <td class="boton">
+            <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
+            <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
+            <input type="button" value="Borrar" class="delete" onclick="delete_row('1')">
+        </td>
     </template>
 
     <script src="js/nav.js"></script>
-    <script src="js/actividades.js"></script>
+    <script src="js/alumnos.js"></script>
     
 </body>
 

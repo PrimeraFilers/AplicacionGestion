@@ -4,13 +4,13 @@
         "apellidos": "Takahashi González",
         "contrasena": "Tak@123",
         "dni": "11223345Y",
-        "fecha-nacimiento": "09/09/2000",
+        "fechaNacimiento": "09/09/2000",
         "email": "alvaro@alumnos.com",
         "telefono": "678905432",
         "empresa": "NTTData",
         "tutor": "Francisco",
-        "horas-dual": "400",
-        "horas-fct": "200",
+        "horasDual": "400",
+        "horasFCT": "200",
         "observaciones": ""
     },
     {
@@ -18,13 +18,13 @@
         "apellidos": "Transformer Pérez",
         "contrasena": "Perez@456",
         "dni": "11253946Z",
-        "fecha-nacimiento": "19/12/2002",
+        "fechaNacimiento": "19/12/2002",
         "email": "ermenejildo@alumnos.com",
         "telefono": "679814321",
         "empresa": "Transnational S.L",
         "tutor": "Francisco",
-        "horas-dual": "300",
-        "horas-fct": "100",
+        "horasDual": "300",
+        "horasFCT": "100",
         "observaciones": ""
     },
     {
@@ -32,13 +32,13 @@
         "apellidos": "Góngora de Quevedo",
         "contrasena": "javier123",
         "dni": "12142854X",
-        "fecha-nacimiento": "30/11/1997",
+        "fechaNacimiento": "30/11/1997",
         "email": "javier@alumnos.com",
         "telefono": "79824951",
         "empresa": "Solbyte",
         "tutor": "Francisco",
-        "horas-dual": "200",
-        "horas-fct": "50",
+        "horasDual": "200",
+        "horasFCT": "50",
         "observaciones": ""
     }
 ]
