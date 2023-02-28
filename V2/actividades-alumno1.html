@@ -62,6 +62,18 @@
                   </tr>
                 </thead>
                 <tbody> </tbody>
+                <tfoot>
+                    
+                    <tr>
+                        <form id="insertValues"></form>
+                            <td><input class="newDate" type="text" form="insertValues"></td>
+                            <td><input class="newTraining" type="text" form="insertValues"></td>
+                            <td><input class="newTime" type="text" form="insertValues"></td>
+                            <td><input class="newActivity" type="text" form="insertValues"></td>
+                            <td><input class="newObservation" type="text" form="insertValues"></td>
+                            <td><input type="button" class="insert" value="Añadir fila" form="insertValues"></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
 
@@ -72,6 +84,11 @@
         <td class="totalHoras fw-light"></td>
         <td class="actividad fw-light"></td>
         <td class="observaciones fw-light"></td>
+        <td class="boton">
+            <input type="button" class="edit" value="Editar" class="edit">
+            <input type="button" class="save" value="Guardar" class="save">
+            <input type="button" value="Borrar" class="delete">
+        </td>
     </template>
 
     <script src="js/nav.js"></script>
