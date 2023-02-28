@@ -66,11 +66,13 @@ function cargarDatos() {
   
 
   /* Eliminacion de datos */
-  const buttonsDelete = document.querySelectorAll(".delete");
-  buttonsDelete.forEach(function(boton) {
-    boton.addEventListener("click", function() {
-      let fila = this.closest("tr");
+  const tablaContainer = document.getElementById("tabla-container");
+  tablaContainer.addEventListener("click", function(event) {
+    if (event.target.classList.contains("delete")) {
+      let fila = event.target.closest("tr");
       fila.remove();
-    });
+    }
   });
+
+  
   
