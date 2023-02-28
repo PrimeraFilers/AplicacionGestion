@@ -4,13 +4,13 @@
         "apellidos": "Pinkzy Ripz",
         "contrasena": "Zardada78",
         "dni": "22334455C",
-        "fecha-nacimiento": "29/05/2001",
+        "fechaNacimiento": "29/05/2001",
         "email": "lizzy@alumnos.com",
         "telefono": "654123986",
         "empresa": "ViewNext",
         "tutor": "José Antonio",
-        "horas-dual": "400",
-        "horas-fct": "200",
+        "horasDual": "400",
+        "horasFCT": "200",
         "observaciones": ""
     },
     {
@@ -18,13 +18,13 @@
         "apellidos": "Fett Evans",
         "contrasena": "gokulegana987",
         "dni": "11250546G",
-        "fecha-nacimiento": "19/12/2002",
+        "fechaNacimiento": "19/12/2002",
         "email": "goku@alumnos.com",
         "telefono": "671563745",
         "empresa": "Transnational S.L",
         "tutor": "José Antonio",
-        "horas-dual": "300",
-        "horas-fct": "100",
+        "horasDual": "300",
+        "horasFCT": "100",
         "observaciones": ""
     },
     {
@@ -37,8 +37,8 @@
         "telefono": "68829956",
         "empresa": "NTTData",
         "tutor": "José Antonio",
-        "horas-dual": "200",
-        "horas-fct": "50",
+        "horasDual": "200",
+        "horasFCT": "50",
         "observaciones": ""
     }
 ]
