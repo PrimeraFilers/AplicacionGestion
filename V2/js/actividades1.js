@@ -71,8 +71,13 @@ function cargarDatos() {
     if (event.target.classList.contains("delete")) {
       let fila = event.target.closest("tr");
       fila.remove();
+<<<<<<< HEAD
     }
   });
 
   
   
+=======
+    });
+  });
+>>>>>>> eebdb88cf6c281d1bf8546f08479c37efabdb981
