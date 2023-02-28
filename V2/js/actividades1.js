@@ -64,6 +64,7 @@ function cargarDatos() {
   
   /* Edicion de datos */  
   
+  
 
   /* Eliminacion de datos */
   const buttonsDelete = document.querySelectorAll(".delete");
