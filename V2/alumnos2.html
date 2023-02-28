@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="src/logo.png">
-    <title>Actividades - Profesor</title>
+    <title>Alumnos</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -62,15 +62,22 @@
 
     </aside>
 
-    <div class="m-0 vh-100 row justify-content-center align-items-center">
-        <div class="col-auto p-5 text-center">
+    <div class="m-0 vh-80 row justify-content-center align-items-center">
+        <div class="col-11 p-5 text-center">
             <table class="table table-dark table-striped table-hover">
                 <thead>
                   <tr>
-                    <th scope="col" class="fs-5 p-3">Fecha</th>
-                    <th scope="col" class="fs-5 p-3">Práctica</th>
-                    <th scope="col" class="fs-5 p-3">Horas</th>
-                    <th scope="col" class="fs-5 p-3">Actividades</th>
+                    <th scope="col" class="fs-5 p-3">Nombre</th>
+                    <th scope="col" class="fs-5 p-3">Apellidos</th>
+                    <th scope="col" class="fs-5 p-3">Contraseña</th>
+                    <th scope="col" class="fs-5 p-3">DNI</th>
+                    <th scope="col" class="fs-5 p-3">Fecha nacimiento</th>
+                    <th scope="col" class="fs-5 p-3">Email</th>
+                    <th scope="col" class="fs-5 p-3">Teléfono</th>
+                    <th scope="col" class="fs-5 p-3">Empresa</th>
+                    <th scope="col" class="fs-5 p-3">Tutor</th>
+                    <th scope="col" class="fs-5 p-3">Horas Dual</th>
+                    <th scope="col" class="fs-5 p-3">Horas FCT</th>
                     <th scope="col" class="fs-5 p-3">Observaciones</th>
                     <th scope="col" class="fs-5 p-3">Editar</th>
                   </tr>
@@ -81,16 +88,27 @@
 
     </div>
     <template>
-        <td class="fecha fw-light"></td>
-        <td class="tipo fw-light"></td>
-        <td class="totalHoras fw-light"></td>
-        <td class="actividad fw-light"></td>
+        <td class="nombre fw-light"></td>
+        <td class="apellidos fw-light"></td>
+        <td class="contrasena fw-light"></td>
+        <td class="dni fw-light"></td>
+        <td class="fechaNacimiento fw-light"></td>
+        <td class="email fw-light"></td>
+        <td class="telefono fw-light"></td>
+        <td class="empresa fw-light"></td>
+        <td class="tutor fw-light"></td>
+        <td class="horasDual fw-light"></td>
+        <td class="horasFCT fw-light"></td>
         <td class="observaciones fw-light"></td>
+        <td class="boton">
+            <input type="button" id="edit_button1" value="Editar" class="edit" onclick="edit_row('1')">
+            <input type="button" id="save_button1" value="Guardar" class="save" onclick="save_row('1')">
+            <input type="button" value="Borrar" class="delete" onclick="delete_row('1')">
+        </td>
     </template>
 
     <script src="js/nav.js"></script>
-    <script src="js/actividades.js"></script>
+    <script src="js/alumnos2.js"></script>
     
 </body>
-
 </html>
