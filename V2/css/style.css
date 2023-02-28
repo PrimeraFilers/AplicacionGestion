@@ -253,3 +253,11 @@ body.open .burger {
   width: 100%;
   padding: 2rem 1rem 1rem 5.5rem;
 }
+
+tfoot input {
+  max-width: 100px;
+}
+
+tfoot > input:last-child {
+  max-width: 200px;
+}
