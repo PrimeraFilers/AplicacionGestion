@@ -32,7 +32,7 @@
         "apellidos": "Dalí Lorca",
         "contrasena": "fran123",
         "dni": "21253945L",
-        "fecha-nacimiento": "10/02/1995",
+        "fechaNacimiento": "10/02/1995",
         "email": "fran@alumnos.com",
         "telefono": "68829956",
         "empresa": "NTTData",
