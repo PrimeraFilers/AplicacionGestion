@@ -56,6 +56,11 @@ function cargarDatos() {
         wrap.appendChild(nuevoProfesor);       
         contenedor.appendChild(wrap);
 
+        document.querySelector("#new_nombreAlumnoTP").value = "";
+        document.querySelector("#new_apellidosTP").value = "";
+        document.querySelector("#new_passwordTP").value = "";
+        document.querySelector("#new_emailTP").value = "";
+
       }
     });
   

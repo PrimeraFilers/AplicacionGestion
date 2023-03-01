@@ -26,5 +26,11 @@
         wrap.appendChild(nuevaActividad);       
         contenedor.appendChild(wrap);
 
+        document.querySelector("#new_ac_fecha").value = "";
+        document.querySelector("#new_ac_tipo").value = "";
+        document.querySelector("#new_ac_hora").value = "";
+        document.querySelector("#new_ac_actividad").value = "";
+        document.querySelector("#new_ac_obs").value = "";
+
       }
     });

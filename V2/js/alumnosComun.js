@@ -41,6 +41,19 @@
         wrap.appendChild(nuevoAlumno);       
         contenedor.appendChild(wrap);
 
+        document.querySelector("#new_nombreA").value = "";
+        document.querySelector("#new_apellidosA").value = "";
+        document.querySelector("#new_contrasenaA").value = "";
+        document.querySelector("#new_dniA").value = "";
+        document.querySelector("#new_fechaA").value = "";
+        document.querySelector("#new_emailA").value = "";
+        document.querySelector("#new_telefonoA").value = "";
+        document.querySelector("#new_empresaA").value = "";
+        document.querySelector("#new_tutorA").value = "";
+        document.querySelector("#new_dualA").value = "";
+        document.querySelector("#new_fctA").value = "";
+        document.querySelector("#new_observacionesA").value = "";
+
       }
     });
   
