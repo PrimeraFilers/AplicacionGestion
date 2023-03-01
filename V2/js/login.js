@@ -5,15 +5,15 @@ console.log(y);
 
 
 function iniciosesion() {
-    if (x.value == "alvaro@alumnos.com" && y.value == "alvaro123") {
+    if (x.value == "alvaro@alumnos.com" && y.value == "Tak@123") {
         window.location.href = "index-alumno1.html";
-    } else if (x.value == "ermejildo@alumnos.com" && y.value == "ermejildo123") {
+    } else if (x.value == "ermejildo@alumnos.com" && y.value == "Perez@456") {
         window.location.href = "index-alumno2.html";
-    } else if (x.value == "goku@alumnos.com" && y.value == "goku123") {
+    } else if (x.value == "goku@alumnos.com" && y.value == "gokulegana987") {
         window.location.href = "index-alumno3.html";
     } else if (x.value == "javier@alumnos.com" && y.value == "javier123") {
         window.location.href = "index-alumno4.html";
-    } else if (x.value == "lizzy@alumnos.com" && y.value == "lizzy123") {
+    } else if (x.value == "lizzy@alumnos.com" && y.value == "Zardada78") {
         window.location.href = "index-alumno5.html";
     } else if (x.value == "francisco@alumnos.com" && y.value == "francisco123") {
         window.location.href = "index-alumno6.html";
