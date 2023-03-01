@@ -64,12 +64,12 @@
                 <tbody></tbody>
                 <tfoot>
                     <tr>
-                        <td><input class="littleInput" type="text" id="new_ac_fecha"></td>
-                        <td><input class="littleInput" type="text" id="new_ac_tipo"></td>
-                        <td><input class="littleInput" type="text" id="new_ac_hora"></td>
-                        <td><input class="littleInput" type="text" id="new_ac_actividad"></td>
-                        <td><input class="littleInput" type="text" id="new_ac_obs"></td>
-                        <td><input type="button" class="add" value="Añadir fila"></td>
+                        <td><input type="text" id="new_ac_fecha"></td>
+                        <td><input type="text" id="new_ac_tipo"></td>
+                        <td><input type="text" id="new_ac_hora"></td>
+                        <td><input type="text" id="new_ac_actividad"></td>
+                        <td><input type="text" id="new_ac_obs"></td>
+                        <td><input type="button" class="add btn btn-success" value="Añadir fila"></td>
                       </tr>
                 </tfoot>
             </table>
@@ -82,15 +82,17 @@
         <td class="totalHoras fw-light"></td>
         <td class="actividad fw-light"></td>
         <td class="observaciones fw-light"></td>
-        <td class="boton"> 
-            <input type="button" id="edit_button1" value="Editar" class="edit">
-            <input type="button" id="save_button1" value="Guardar" class="save">
-            <input type="button" value="Borrar" class="delete">
+        <td class="boton">
+            <input type="button" id="edit_button1" value="Editar" class="edit btn btn-warning">
+            <input type="button" id="save_button1" value="Guardar" class="save btn btn-success">
+            <input type="button" value="Borrar" class="delete btn btn-danger">
         </td>
     </template>
 
     <script src="js/nav.js"></script>
     <script src="js/actividades1.js"></script>
+    <script src="js/actividadesComun.js"></script>
+    <script src="js/botonesComunes.js"></script>
     
 </body>
 </html>

@@ -9,22 +9,22 @@ function cargarDatos() {
       data.forEach(function (el) {
 
         let wrap = document.createElement("tr");
-        let alumnos = plantilla.content.cloneNode(true);
+        let nuevoAlumno = plantilla.content.cloneNode(true);
         
-        alumnos.querySelector(".nombre").textContent = el.nombre;
-        alumnos.querySelector(".apellidos").textContent = el.apellidos;
-        alumnos.querySelector(".contrasena").textContent = el.contrasena;
-        alumnos.querySelector(".dni").textContent = el.dni;
-        alumnos.querySelector(".fechaNacimiento").textContent = el.fechaNacimiento;
-        alumnos.querySelector(".email").textContent = el.email;
-        alumnos.querySelector(".telefono").textContent = el.telefono;
-        alumnos.querySelector(".empresa").textContent = el.empresa;
-        alumnos.querySelector(".tutor").textContent = el.tutor;
-        alumnos.querySelector(".horasDual").textContent = el.horasDual;
-        alumnos.querySelector(".horasFCT").textContent = el.horasFCT;
-        alumnos.querySelector(".observaciones").textContent = el.observaciones;
+        nuevoAlumno.querySelector(".nombre").textContent = el.nombre;
+        nuevoAlumno.querySelector(".apellidos").textContent = el.apellidos;
+        nuevoAlumno.querySelector(".contrasena").textContent = el.contrasena;
+        nuevoAlumno.querySelector(".dni").textContent = el.dni;
+        nuevoAlumno.querySelector(".fechaNacimiento").textContent = el.fechaNacimiento;
+        nuevoAlumno.querySelector(".email").textContent = el.email;
+        nuevoAlumno.querySelector(".telefono").textContent = el.telefono;
+        nuevoAlumno.querySelector(".empresa").textContent = el.empresa;
+        nuevoAlumno.querySelector(".tutor").textContent = el.tutor;
+        nuevoAlumno.querySelector(".horasDual").textContent = el.horasDual;
+        nuevoAlumno.querySelector(".horasFCT").textContent = el.horasFCT;
+        nuevoAlumno.querySelector(".observaciones").textContent = el.observaciones;
 
-        wrap.appendChild(alumnos);
+        wrap.appendChild(nuevoAlumno);
         wrap.classList.add(numeroElemento);
         numeroElemento++; 
         contenedor.appendChild(wrap);

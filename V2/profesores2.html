@@ -26,7 +26,7 @@
     <aside class="sidebar">
         <header class="sidebar-header"></header>
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='index-profesor1.html'">
+            <button type="button" class="botonIndex" onclick="location.href='index-profesor2.html'">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </button>
@@ -40,21 +40,21 @@
         </nav>
 
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='profesores.html'">
+            <button type="button" class="botonIndex" onclick="location.href='profesores2.html'">
                 <i class="fa-solid fa-user-tie"></i>
                 <span>Profesores</span>
             </button>
         </nav>
 
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='alumnos.html'">
+            <button type="button" class="botonIndex" onclick="location.href='alumnos2.html'">
                 <i class="fa-solid fa-children"></i>
                 <span>Alumnos</span>
             </button>
         </nav>
 
         <nav>
-            <button type="button" class="botonIndex" onclick="location.href='empresas.html'">
+            <button type="button" class="botonIndex" onclick="location.href='empresas2.html'">
                 <i class="fa-solid fa-building"></i>
                 <span>Empresas</span>
             </button>
@@ -63,7 +63,7 @@
     </aside>
 
     <div class="m-0 vh-100 row justify-content-center align-items-center">
-        <div class="col-auto p-5 text-center">
+        <div class="col-auto p-5 text-center" id="tabla-container">
             <table class="table table-dark table-striped table-hover">
                 <thead>
                   <tr>
@@ -74,7 +74,16 @@
                     <th scope="col" class="fs-5 p-3">Acciones</th>
                   </tr>
                 </thead>
-                <tbody> </tbody>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="text" id="new_nombreAlumnoTP"></td>
+                        <td><input type="text" id="new_apellidosTP"></td>
+                        <td><input type="text" id="new_passwordTP"></td>
+                        <td><input type="text" id="new_emailTP"></td>
+                        <td><input type="button" class="add btn btn-success" value="Añadir fila"></td>
+                      </tr>
+                </tfoot>
               </table>
         </div>
 
@@ -84,10 +93,16 @@
         <td class="apellidos fw-light"></td>
         <td class="contrasena fw-light"></td>
         <td class="email fw-light"></td>
+        <td class="boton">
+            <input type="button" id="edit_button1" value="Editar" class="edit btn btn-warning">
+            <input type="button" id="save_button1" value="Guardar" class="save btn btn-success">
+            <input type="button" value="Borrar" class="delete btn btn-danger">
+        </td>
     </template>
 
     <script src="js/nav.js"></script>
-    <script src="js/actividades.js"></script>
+    <script src="js/profesoresComun.js"></script>
+    <script src="js/botonesComunes.js"></script>
 
 </body>
 

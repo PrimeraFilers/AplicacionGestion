@@ -63,8 +63,8 @@
 
     </aside>
 
-    <div class="m-0 vh-80 row justify-content-center align-items-center">
-        <div class="col-11 p-5 text-center">
+    <div class="m-0 vh-100 row justify-content-center align-items-center" >
+        <div class="col-auto p-5 text-center" id="tabla-container">
             <table class="table table-dark table-striped table-hover">
                 <thead>
                   <tr>
@@ -83,7 +83,24 @@
                     <th scope="col" class="fs-5 p-3">Editar</th>
                   </tr>
                 </thead>
-                <tbody> </tbody>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="text" id="new_nombreA"></td>
+                        <td><input type="text" id="new_apellidosA"></td>
+                        <td><input type="text" id="new_contrasenaA"></td>
+                        <td><input type="text" id="new_dniA"></td>
+                        <td><input type="text" id="new_fechaA"></td>
+                        <td><input type="text" id="new_emailA"></td>
+                        <td><input type="text" id="new_telefonoA"></td>
+                        <td><input type="text" id="new_empresaA"></td>
+                        <td><input type="text" id="new_tutorA"></td>
+                        <td><input type="text" id="new_dualA"></td>
+                        <td><input type="text" id="new_fctA"></td>
+                        <td><input type="text" id="new_observacionesA"></td>
+                        <td><input type="button" class="add btn btn-success" value="Añadir fila"></td>
+                      </tr>
+                </tfoot>
             </table>
         </div>
 
@@ -102,14 +119,16 @@
         <td class="horasFCT fw-light"></td>
         <td class="observaciones fw-light"></td>
         <td class="boton">
-            <input type="button" id="edit_button1" value="Editar" class="btn btn-warning" onclick="edit_row('1')">
-            <input type="button" id="save_button1" value="Guardar" class="btn btn-success" onclick="save_row('1')">
-            <input type="button" value="Borrar" class="btn btn-danger" onclick="delete_row('1')">
+            <input type="button" id="edit_button1" value="Editar" class="edit btn btn-warning">
+            <input type="button" id="save_button1" value="Guardar" class="save btn btn-success">
+            <input type="button" value="Borrar" class="delete btn btn-danger">
         </td>
     </template>
 
     <script src="js/nav.js"></script>
     <script src="js/alumnos.js"></script>
+    <script src="js/alumnosComun.js"></script>
+    <script src="js/botonesComunes.js"></script>
     
 </body>
 </html>

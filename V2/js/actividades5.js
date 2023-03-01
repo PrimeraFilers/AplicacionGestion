@@ -9,15 +9,15 @@ function cargarDatos() {
       data.forEach(function (el) {
 
         let wrap = document.createElement("tr");
-        let actividada = plantilla.content.cloneNode(true);
+        let nuevaActividad = plantilla.content.cloneNode(true);
         
-        actividada.querySelector(".fecha").textContent = el.fecha;
-        actividada.querySelector(".tipo").textContent = el.tipoPractica;
-        actividada.querySelector(".totalHoras").textContent = el.totalHoras;
-        actividada.querySelector(".actividad").textContent = el.actividadRealizada;
-        actividada.querySelector(".observaciones").textContent = el.observacionesIncidencias;
+        nuevaActividad.querySelector(".fecha").textContent = el.fecha;
+        nuevaActividad.querySelector(".tipo").textContent = el.tipoPractica;
+        nuevaActividad.querySelector(".totalHoras").textContent = el.totalHoras;
+        nuevaActividad.querySelector(".actividad").textContent = el.actividadRealizada;
+        nuevaActividad.querySelector(".observaciones").textContent = el.observacionesIncidencias;
 
-        wrap.appendChild(actividada);       
+        wrap.appendChild(nuevaActividad);       
         contenedor.appendChild(wrap);
         
 
