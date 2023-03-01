@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Francisco",
+        "apellidos": "Romero Guillén",
+        "contrasena": "francisco123",
+        "email": "francisco@profesores.com"
+    },
+    {
+        "nombre": "José Antonio",
+        "apellidos": "Lara Sánchez",
+        "contrasena": "joseantonio123",
+        "email": "joseantonio@profesores.com"
+    }
+  ]

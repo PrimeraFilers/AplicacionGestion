@@ -15,15 +15,15 @@
 
         let wrap = document.createElement("tr");
   
-        let nuevaActividad = plantilla.content.cloneNode(true);
+        let nuevaEmpresa = plantilla.content.cloneNode(true);
     
-        nuevaActividad.querySelector(".nombreEmpresa").textContent = newNombreEmpresa;
-        nuevaActividad.querySelector(".telefono").textContent = newTelefonoEmpresa;
-        nuevaActividad.querySelector(".email").textContent = newEmailEmpresa;
-        nuevaActividad.querySelector(".responsable").textContent = newResponsable;
-        nuevaActividad.querySelector(".observaciones").textContent = newObservacionesEmpresa;
+        nuevaEmpresa.querySelector(".nombreEmpresa").textContent = newNombreEmpresa;
+        nuevaEmpresa.querySelector(".telefono").textContent = newTelefonoEmpresa;
+        nuevaEmpresa.querySelector(".email").textContent = newEmailEmpresa;
+        nuevaEmpresa.querySelector(".responsable").textContent = newResponsable;
+        nuevaEmpresa.querySelector(".observaciones").textContent = newObservacionesEmpresa;
     
-        wrap.appendChild(nuevaActividad);       
+        wrap.appendChild(nuevaEmpresa);       
         contenedor.appendChild(wrap);
 
       }
