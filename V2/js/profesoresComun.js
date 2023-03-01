@@ -9,14 +9,14 @@ function cargarDatos() {
       data.forEach(function (el) {
 
         let wrap = document.createElement("tr");
-        let profesores = plantilla.content.cloneNode(true);
+        let nuevoProfesor = plantilla.content.cloneNode(true);
         
-        profesores.querySelector(".nombre").textContent = el.nombre;
-        profesores.querySelector(".apellidos").textContent = el.apellidos;
-        profesores.querySelector(".contrasena").textContent = el.contrasena;
-        profesores.querySelector(".email").textContent = el.email;
+        nuevoProfesor.querySelector(".nombre").textContent = el.nombre;
+        nuevoProfesor.querySelector(".apellidos").textContent = el.apellidos;
+        nuevoProfesor.querySelector(".contrasena").textContent = el.contrasena;
+        nuevoProfesor.querySelector(".email").textContent = el.email;
 
-        wrap.appendChild(profesores);
+        wrap.appendChild(nuevoProfesor);
         wrap.classList.add(numeroElemento);
         numeroElemento++; 
         contenedor.appendChild(wrap);
@@ -46,14 +46,14 @@ function cargarDatos() {
 
         let wrap = document.createElement("tr");
   
-        let nuevaActividad = plantilla.content.cloneNode(true);
+        let nuevoProfesor = plantilla.content.cloneNode(true);
     
-        nuevaActividad.querySelector(".nombre").textContent = newNombre;
-        nuevaActividad.querySelector(".apellidos").textContent = newApellidos;
-        nuevaActividad.querySelector(".contrasena").textContent = newContrasena;
-        nuevaActividad.querySelector(".email").textContent = newEmail;
+        nuevoProfesor.querySelector(".nombre").textContent = newNombre;
+        nuevoProfesor.querySelector(".apellidos").textContent = newApellidos;
+        nuevoProfesor.querySelector(".contrasena").textContent = newContrasena;
+        nuevoProfesor.querySelector(".email").textContent = newEmail;
     
-        wrap.appendChild(nuevaActividad);       
+        wrap.appendChild(nuevoProfesor);       
         contenedor.appendChild(wrap);
 
       }

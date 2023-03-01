@@ -9,15 +9,15 @@ function cargarDatos() {
       data.forEach(function (el) {
 
         let wrap = document.createElement("tr");
-        let empresas = plantilla.content.cloneNode(true);
+        let nuevaEmpresa = plantilla.content.cloneNode(true);
         
-        empresas.querySelector(".nombreEmpresa").textContent = el.nombre;
-        empresas.querySelector(".telefono").textContent = el.telefono;
-        empresas.querySelector(".email").textContent = el.email;
-        empresas.querySelector(".responsable").textContent = el.responsable;
-        empresas.querySelector(".observaciones").textContent = el.observaciones;
+        nuevaEmpresa.querySelector(".nombreEmpresa").textContent = el.nombre;
+        nuevaEmpresa.querySelector(".telefono").textContent = el.telefono;
+        nuevaEmpresa.querySelector(".email").textContent = el.email;
+        nuevaEmpresa.querySelector(".responsable").textContent = el.responsable;
+        nuevaEmpresa.querySelector(".observaciones").textContent = el.observaciones;
         
-        wrap.appendChild(empresas);
+        wrap.appendChild(nuevaEmpresa);
         wrap.classList.add(numeroElemento);
         numeroElemento++; 
         contenedor.appendChild(wrap);

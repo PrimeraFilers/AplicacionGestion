@@ -258,6 +258,6 @@ tfoot input {
   max-width: 100px;
 }
 
-tfoot > input:last-child {
-  max-width: 200px;
+#save_button1 {
+  display:none;
 }
