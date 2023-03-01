@@ -261,3 +261,8 @@ tfoot input {
 #save_button1 {
   display:none;
 }
+
+table {
+  overflow-x: auto;
+  margin: 0 50px;
+}
